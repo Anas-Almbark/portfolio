@@ -1,0 +1,23 @@
+.project-details {
+  color: var(--text-color);
+  padding: 20px;
+}
+
+.project-details img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-links .btn {
+  margin-right: 10px;
+}
+
+.project-meta {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
+
+.project-meta p {
+  margin-bottom: 10px;
+}
