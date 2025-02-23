@@ -40,7 +40,9 @@ let dataportfolio = {
 };
 async function fetchData() {
   try {
-    const response = await fetch("http://127.0.0.1:8000/api/projects");
+    const response = await fetch(
+      "http://anas-almbark-portfolio.free.nf/api/projects"
+    );
     const data = await response.json();
     dataportfolio = data;
     window.dispatchEvent(new Event("portfolioDataLoaded"));
