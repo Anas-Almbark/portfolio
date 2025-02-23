@@ -12,7 +12,9 @@ const ProjectDetails = () => {
   useEffect(() => {
     const fetchProjectData = async () => {
       try {
-        const response = await fetch(`http://127.0.0.1:8000/api/projects`);
+        const response = await fetch(
+          `http://anas-almbark-portfolio.free.nf/api/projects`
+        );
         const data = await response.json();
         // eslint-disable-next-line array-callback-return
         data.projects.map((e) => {

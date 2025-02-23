@@ -18,7 +18,9 @@ export const Portfolio = () => {
   useEffect(() => {
     const fetchPortfolioData = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/projects");
+        const response = await fetch(
+          "http://anas-almbark-portfolio.free.nf/api/projects"
+        );
         const data = await response.json();
         setPortfolioData(data);
         dataportfolio.projects = data.projects;
