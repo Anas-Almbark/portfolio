@@ -41,7 +41,7 @@ let dataportfolio = {
 async function fetchData() {
   try {
     const response = await fetch(
-      "http://anas-almbark-portfolio.free.nf/api/projects"
+      "https://anas-almbark-portfolio.free.nf/api/projects"
     );
     const data = await response.json();
     dataportfolio = data;

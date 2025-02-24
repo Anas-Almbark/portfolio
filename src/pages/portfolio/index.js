@@ -19,8 +19,10 @@ export const Portfolio = () => {
     const fetchPortfolioData = async () => {
       try {
         const response = await fetch(
-          "http://anas-almbark-portfolio.free.nf/api/projects"
+          "https://anas-almbark-portfolio.free.nf/api/projects"
         );
+        console.log(response);
+
         const data = await response.json();
         setPortfolioData(data);
         dataportfolio.projects = data.projects;
@@ -122,7 +124,7 @@ export const Portfolio = () => {
                   key={i}
                 >
                   <img
-                    src={`http://127.0.0.1:8000/storage/${data.image}`}
+                    src={`https://anas-almbark-portfolio.free.nf/storage/${data.image}`}
                     className="card-img-top rounded"
                     alt={data.title}
                   />

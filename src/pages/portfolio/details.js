@@ -13,7 +13,7 @@ const ProjectDetails = () => {
     const fetchProjectData = async () => {
       try {
         const response = await fetch(
-          `http://anas-almbark-portfolio.free.nf/api/projects`
+          `https://anas-almbark-portfolio.free.nf/api/projects`
         );
         const data = await response.json();
         // eslint-disable-next-line array-callback-return
@@ -48,7 +48,7 @@ const ProjectDetails = () => {
           <Col lg="12">
             <div className="w-100 text-center img_hover_zoom">
               <img
-                src={`http://127.0.0.1:8000/storage/${projectData.image}`}
+                src={`https://anas-almbark-portfolio.free.nf/storage/${projectData.image}`}
                 alt="img_project"
               />
             </div>
